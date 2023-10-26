@@ -1,5 +1,7 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { MatDialogModule } from '@angular/material/dialog';
+
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 
 
@@ -9,6 +11,7 @@ import { ErrorDialogComponent } from './components/error-dialog/error-dialog.com
     ErrorDialogComponent
   ],
   imports: [
+    MatDialogModule,
     CommonModule
   ],
   exports:[ErrorDialogComponent]
